@@ -34,8 +34,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
-          {children}
+          <div className="grid grid-cols-2">
+
+            <Navbar />
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>
